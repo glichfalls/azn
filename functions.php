@@ -9,7 +9,6 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style('main_css');
 });
 
-
 add_action('init', function() {
     register_post_type('result', [
         'labels' => [

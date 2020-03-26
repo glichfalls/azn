@@ -1,0 +1,482 @@
+[
+    {
+        "key": "group_5e7d09bbac7ef",
+        "title": "Player",
+        "fields": [
+            {
+                "key": "field_5e7d09bbe780d",
+                "label": "Full Name",
+                "name": "name",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e7d09fdd3a60",
+                "label": "Avatar",
+                "name": "avatar",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5e7d09cbe780f",
+                "label": "Social Media",
+                "name": "social_media",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e7d09e0e7810",
+                        "label": "Twitter",
+                        "name": "twitter",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5e7d09e8e7811",
+                        "label": "Instagram",
+                        "name": "instagram",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e7d0a4ad5653",
+                "label": "Description",
+                "name": "description",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "player"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5e7d0925add74",
+        "title": "Results",
+        "fields": [
+            {
+                "key": "field_5e7d0c5823bb6",
+                "label": "Date",
+                "name": "date",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d.m.Y",
+                "return_format": "d.m.Y",
+                "first_day": 1
+            },
+            {
+                "key": "field_5e7d0926f5193",
+                "label": "Results",
+                "name": "results",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add result",
+                "sub_fields": [
+                    {
+                        "key": "field_5e7d0cb18a874",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "post_object",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "post_type": [],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "object",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_5e7d0bebeb523",
+                        "label": "AZN Team",
+                        "name": "azn_team",
+                        "type": "post_object",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "team"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "object",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_5e7d0c14eb525",
+                        "label": "AZN Points",
+                        "name": "azn_points",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5e7d0c00eb524",
+                        "label": "Oponent Team",
+                        "name": "oponent_team",
+                        "type": "post_object",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "team"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "object",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_5e7d0c1beb526",
+                        "label": "Oponent Points",
+                        "name": "oponent_points",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "result"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5e7d0a7d70f49",
+        "title": "Team",
+        "fields": [
+            {
+                "key": "field_5e7d0a7d6dd3f",
+                "label": "Game",
+                "name": "game",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "lol": "League of Legends",
+                    "csgo": "Counter Strike",
+                    "pubg": "Playerunknown Battleground"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e7d0ad23975b",
+                "label": "Logo",
+                "name": "logo",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5e7d0dfb86355",
+                "label": "Players",
+                "name": "players",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5e7d0e0c86356",
+                        "label": "Player",
+                        "name": "player",
+                        "type": "post_object",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "player"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "object",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_5e7d0e1a86357",
+                        "label": "Role",
+                        "name": "role",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e7d0aea3975d",
+                "label": "Description",
+                "name": "description",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "team"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    }
+]
