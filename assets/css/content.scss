@@ -1,0 +1,33 @@
+main {
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+
+  .container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-family: Nebulous-Regular, sans-serif;
+    color: $azn-gold;
+    font-size: 42px;
+    background-color: $azn-black-dark;
+    display: block;
+    padding: 20px;
+    border-bottom: 3px solid $azn-gold;
+    margin: 0;
+  }
+
+  .content {
+    background-color: $azn-black;
+    padding: 30px 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+
+}

@@ -1,0 +1,30 @@
+/*
+Theme Name: Arizen
+Version: 1.0
+Requires at least: 5
+Requires PHP: 7.4
+Description: AZN WordPress Theme
+Author: Robin Portner
+*/
+
+@font-face {
+  font-family: Nebulous-Regular;
+  src: url('/wp-content/themes/arizen/assets/font/Nebulous-Regular.ttf');
+}
+
+$azn-gold: #dbbe72;
+$azn-black: #2a2d2f;
+$azn-black-dark: #0f0e0e;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $azn-black-dark;
+}
+
+@import "assets/css/header";
+@import "assets/css/footer";
+@import "assets/css/content";
