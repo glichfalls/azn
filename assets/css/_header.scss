@@ -1,7 +1,7 @@
 header.main {
   display: flex;
   height: 100px;
-  background-color: $azn-black;
+  background-color: $azn-black-dark;
   font-family: Nebulous-Regular, sans-serif;
   font-size: 28px;
   padding: 0 20px;
@@ -16,6 +16,7 @@ header.main {
     text-decoration: none;
     img {
       height: 100%;
+      padding: 15px;
     }
   }
 
@@ -33,17 +34,18 @@ header.main {
         align-items: center;
         height: 100%;
         padding: 0 10px;
+        &.current-menu-item,
         &.current_page_item {
           a {
-            color: #FFFFFF;
+            color: $azn-gold;
           }
         }
         a {
-          color: $azn-gold;
+          color: #FFFFFF;
           text-decoration: none;
           transition: color, .25s;
           &:hover {
-            color: #FFFFFF;
+            color: $azn-gold;
           }
         }
       }
@@ -62,11 +64,11 @@ header.main {
       margin: 0 10px;
     }
     a {
-      color: $azn-gold;
+      color: #FFFFFF;
       text-decoration: none;
 
       &.active {
-        color: #FFFFFF;
+        color: $azn-gold;
       }
     }
   }
@@ -77,10 +79,37 @@ header.main {
 @media screen and (max-width: 992px) {
 
   header.main {
+    font-size: 32px;
     height: 60px;
     padding: 0;
+    .logo {
+      font-size: 32px;
+      img {
+        padding: 10px;
+      }
+    }
     .menu-header-container {
-      display: none;
+      overflow: hidden;
+      width: 0;
+      transition: width, .25s;
+      height: calc(100vh - 60px);
+      top: 60px;
+      position: fixed;
+      background-color: $azn-black-dark;
+      z-index: 10;
+      &.open {
+        width: 100vw;
+      }
+      ul {
+        margin: 0;
+        padding: 20px;
+        flex-flow: column;
+        align-items: flex-start;
+        li {
+          height: auto;
+          padding: 15px 0;
+        }
+      }
     }
     .language {
       display: none;

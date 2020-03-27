@@ -1,5 +1,5 @@
 <?php
-$menu =  wp_nav_menu([
+$menu = wp_nav_menu([
     'echo' => false
 ]);
 ?>
@@ -20,7 +20,7 @@ $menu =  wp_nav_menu([
     <header class="main">
         
         <a href="/" class="logo">
-            <img src="/wp-content/themes/arizen/assets/images/logo/azn-gold.jpg" />
+            <img src="/wp-content/themes/arizen/assets/images/logo/favicon.png" />
             ARIZEN
         </a>
     
@@ -31,5 +31,11 @@ $menu =  wp_nav_menu([
             <span class="separator"></span>
             <a class="active" href="/">EN</a>
         </div>
-        
+
+        <button class="hamburger hamburger--emphatic" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
     </header>

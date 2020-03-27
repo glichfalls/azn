@@ -22,9 +22,25 @@ $azn-black-dark: #0f0e0e;
 
 body {
   margin: 0;
-  background-color: $azn-black-dark;
+  background-color: #dddddd;
+  font-family: Roboto, sans-serif;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 @import "assets/css/header";
+@import "assets/css/hamburger";
 @import "assets/css/footer";
 @import "assets/css/content";
+@import "assets/css/news";
+@import "assets/css/teams";
+@import "assets/css/landing";
