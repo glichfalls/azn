@@ -43,3 +43,33 @@
     }
   }
 }
+
+.team-grid {
+  display: flex;
+  justify-content: flex-start;
+
+  &-item {
+    color: #FFFFFF;
+    width: 250px;
+
+
+    h4 {
+      margin: 5px 0;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      .separator {
+        display: block;
+        width: 2px;
+        height: 22px;
+        background-color: $azn-gold;
+        margin: 0 10px;
+        transform: rotate(20deg);
+      }
+    }
+    img {
+      width: 100%;
+      border: 1px solid $azn-black-dark;
+    }
+  }
+}
